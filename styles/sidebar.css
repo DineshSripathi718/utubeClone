@@ -1,0 +1,27 @@
+/* sidebar */
+.sidebar-container{
+  position: fixed;
+  top: 55px;
+  left: 0px;
+  bottom: 0px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-right: 1px solid rgb(214, 212, 212);
+}
+
+
+
+.homeIcon-container{
+  width: 27px;
+  height: 27px;
+  flex: 1;
+  padding-top: 20px;
+}
+.homeIcon{
+  width: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,273 @@
+/* header section*/
+
+.header-container{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 55px;
+  z-index: 10;
+  background-color: white;
+  border-bottom: 1px solid rgb(214, 212, 212);
+  /* box-shadow: 4px 4px 14px rgb(194, 192, 192); */
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+}
+.left{
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-menu{
+  width: 70%;
+  flex: 1;
+}
+.menu-container{
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.youtubeicon-container{
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.icon{
+  flex: 1;
+  width: 100%;
+}
+
+.middle{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.search_bar{
+  align-items: center;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(221, 217, 217);
+  box-shadow: inset 1px 2px 5px rgb(0,0,0,0.3);
+  border-radius : 2px;
+  padding-left: 20px;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search_bar::placeholder{
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search-button{
+  height: 34px;
+  width : 40px;
+  border: none;
+  border-color: rgb(221, 217, 217);
+  background-color: rgb(221, 217, 217);
+  margin-left: -2px;
+  position: relative;
+  
+}
+
+.searchToolTip {
+  background-color: rgb(116, 113, 113);
+  color: white;
+  padding: 2px 17px;
+  position: absolute;
+  right: 0px;
+  bottom: -24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 4px;
+  font-size: 10px;
+  opacity: 0;
+  transition : opacity 0.9s;
+  pointer-events: none;
+}
+.search-button:hover .searchToolTip{
+  opacity: 1;
+}
+.search-icon,
+.mic-icon{
+  height: 27px;
+  width : 20px;
+  object-fit: contain;
+}
+
+.mic-button{
+  height: 34px;
+  width : 35px;
+  margin-left: 11px;
+  border-radius: 18px;
+  border: none;
+  border-style: solid;
+  border-color: rgb(221, 217, 217);
+  background-color : rgb(221, 217, 217);
+  position: relative;
+}
+
+.speak_mic{
+  background-color: rgb(116, 113, 113);
+  color: white;
+  padding: 2px 17px;
+  position: absolute;
+  right: -14px;
+  bottom: -28px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 4px;
+  font-size: 10px;
+  opacity: 0;
+  transition : opacity 0.9s;
+  pointer-events: none;
+}
+
+.mic-button:hover .speak_mic,
+.add-video-container:hover .addvideo,
+.notification-container:hover .notification,
+.usericon-container:hover .user
+{
+  opacity: 1;
+}
+
+.right{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usericon-container,
+.add-video-container,
+.menu-container,
+.notification-container{
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+/* .add-video-container{
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  position: relative;
+} */
+.addvideo{
+  background-color: rgb(116, 113, 113);
+  color: white;
+  padding: 2px 17px;
+  position: absolute;
+  right: -14px;
+  bottom: -28px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 4px;
+  font-size: 10px;
+  opacity: 0;
+  transition : opacity 0.9s;
+  pointer-events: none;
+}
+
+/* .add-video-container:hover .addvideo{
+  opacity: 1;
+} */
+
+.add-video-icon{
+  flex: 1;
+  width: 100%;
+}
+
+
+
+.notification-icon{
+  width: 80%;
+  flex: 1;
+}
+.notification-number{
+  background-color: rgb(211, 34, 34);
+  color: white;
+  padding: 2px  6px;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  position: absolute;
+  right: 0px;
+  top: 2px;
+}
+
+.notification{
+  background-color: rgb(116, 113, 113);
+  color: white;
+  padding: 2px 17px;
+  position: absolute;
+  right: -14px;
+  bottom: -28px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 4px;
+  font-size: 10px;
+  opacity: 0;
+  transition : opacity 0.9s;
+  pointer-events: none;
+}
+/* .notification-container:hover .notification{
+  opacity: 1;
+} */
+/* .menu-container{
+  width: 27px;
+  height: 27px;
+  align-items: center;
+} */
+.menu-icon3x3{
+  width: 90%;
+  flex: 1;
+}
+
+
+/* .usericon-container{
+  width: 27px;
+  height: 27px;
+  align-items: center;
+  margin-right: 10px;
+  position: relative;
+} */
+
+.user{
+  background-color: rgb(116, 113, 113);
+  color: white;
+  padding: 2px 17px;
+  position: absolute;
+  right: -14px;
+  bottom: -58px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 4px;
+  font-size: 10px;
+  opacity: 0;
+  transition : opacity 0.9s;
+  pointer-events: none;
+
+}
+
+/* .usericon-container:hover .user{
+  opacity: 1;
+} */
+.user-icon{
+ width: 100%;
+ flex: 1;
+ border-radius: 20px;
+}

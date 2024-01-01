@@ -1,0 +1,51 @@
+.search_bar{
+  display: block;
+  margin-bottom: 30px;
+}
+
+.video_container{
+  width: 300px;
+  height: 270px;
+  object-fit: contain;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.thumbnail{
+  width: 300px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.channel_icon{
+  width: 46px;
+  height: 43px;
+  border-radius: 300px;
+  object-fit: cover;
+}
+
+.info_grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+
+p{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.video_title{
+  font-weight: 700;
+  margin: none;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.channel_name{
+  font-size: 14px;
+  font-weight: 500;
+}
